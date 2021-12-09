@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<table>
+    <tr>
+        <td><input type="number" id="x" value=""></td>
+        <td><input type="number" id="y" value=""></td>
+    </tr>
+</table>
+<table>
+    <td><button onclick="add()" id="z" value="">Addition(+)</button></td>
+    <td><button onclick="sub()">Subtraction(-)</button></td>
+    <td><button onclick="mul()">Mutiplication(X)</button></td>
+    <td><button onclick="div()">Division(/)</button></td>
+    <tr>
+        <td><div id="v"></div></td>
+    </tr>
+</table>
+<script>
+function add()
+{
+    let a=parseFloat(document.getElementById("x").value)
+    let b=parseFloat(document.getElementById("y").value)
+    document.getElementById("v").innerHTML="Result Divison: "+(a+b)
+}
+function sub()
+{
+    let a=parseFloat(document.getElementById("x").value)
+    let b=parseFloat(document.getElementById("y").value)
+    document.getElementById("v").innerHTML="Result Divison: "+(a-b)
+}
+function mul()
+{
+    let a=parseFloat(document.getElementById("x").value)
+    let b=parseFloat(document.getElementById("y").value)
+    document.getElementById("v").innerHTML="Result Divison: "+(a*b)
+}
+function div()
+{
+    let a = parseFloat(document.getElementById("x").value)
+    let b = parseFloat(document.getElementById("y").value)
+    document.getElementById("v").innerHTML = "Result Divison: " + (a / b)
+}
+</script>
+</body>
+</html>
